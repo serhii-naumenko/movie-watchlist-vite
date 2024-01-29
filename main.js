@@ -43,7 +43,6 @@ const emptyScreenWatch = `
 `
 
 const pathname = window.location.pathname
-console.log(pathname)
 
 if (pathname === '/index.html' || pathname === '/') {
   searchInputEl = document.getElementById('search__input')
@@ -56,7 +55,7 @@ if (pathname === '/index.html' || pathname === '/') {
     mainEl.innerHTML = startScreenIndex
     mainEl.style.display = 'flex'
   }
-} else if (pathname === '/watchlist.html') {
+} else if (pathname.includes('/watchlist')) {
   mainWatchEl = document.getElementById('main-watch')
   mainWatchEl.addEventListener('click', handlerMainClickWatch)
   if (watchList.length > 0) {
