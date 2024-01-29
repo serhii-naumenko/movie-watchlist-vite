@@ -43,6 +43,7 @@ const emptyScreenWatch = `
 `
 
 const pathname = window.location.pathname
+console.log(pathname)
 
 if (pathname === '/index.html' || pathname === '/') {
   searchInputEl = document.getElementById('search__input')
