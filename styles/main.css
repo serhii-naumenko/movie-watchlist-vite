@@ -1,0 +1,249 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 700px;
+  font-family: Inter, sans-serif;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.header {
+  position: relative;
+  padding: 42px 44px 38px;
+  background: url('../assets/header-bg.png'),
+     rgb(37, 36, 36) 0px -158.291px / 100% 423.007% no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.header__title {
+  color: #FFF;
+  font-size: 42.795px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -1.926px;
+  margin-bottom: 45px;
+}
+
+.header__link {
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 142.857%;
+  text-decoration: none;
+}
+
+@media (min-width: 500px) {
+  .header {
+    padding: 82px 44px 78px;
+  }
+  
+  .header__container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .header__title {
+    line-height: 55.556%;
+    margin-bottom: 0;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: #FFF;
+  height: 780px;
+  border: 1px solid #9CA3AF;
+  padding: 42px 44px 0;
+  overflow-y: auto;
+}
+
+.start__text, .empty-query__text {
+  color: #DFDDDD;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 111.111%;
+}
+
+.empty-query__text {
+  text-align: center;
+}
+
+.movie__block {
+  display: flex;
+  flex-direction: column;
+  padding: 21px 0;
+  border-bottom: 1.5px solid #E5E7EB;
+}
+
+@media (min-width: 520px) {
+  .movie__block {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.movie__poster {
+  width: 100%;
+  grid-column: 1 / 2;
+}
+
+.text__container {
+  padding: 15px 21px;
+  grid-column: 2 / 5;
+}
+
+.movie__title-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 11px;
+}
+
+.movie__title {
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 111.111%;
+  margin-right: 8px;
+}
+
+.star-icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 4px;
+}
+
+.movie__rate {
+  color: #111827;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 166.667%;
+}
+
+.movie__info-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  color: #111827;
+}
+
+.movie__info-time {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 166.667%;
+  margin-right: 19px;
+}
+
+.movie__info-lang {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 166.667%;
+}
+
+.add-watchlist-btn, .minus-watchlist-btn {
+  margin-left: auto;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  
+  color: #111827;
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 166.667%;
+
+  border: none;
+}
+
+.add-watchlist-btn:disabled, .add-watchlist-btn:disabled:hover {
+  font-weight: 200;
+  cursor: not-allowed;
+}
+
+.add-watchlist-btn:disabled .plus-icon {
+  opacity: 0.3;
+}
+
+.add-watchlist-btn:hover, .minus-watchlist-btn:hover {
+  font-weight: 500;
+}
+
+.add-watchlist-btn:active, .minus-watchlist-btn:active {
+  font-weight: 500;
+  color: rgb(174, 6, 6);
+}
+
+.plus-icon, .minus-icon {
+  margin-right: 5px;
+  width: 16px;
+  height: 16px;
+}
+
+.movie__plot-index, .movie__plot-watch {
+  position: relative;
+  color: #6B7280;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 142.857%;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+.movie__plot-index {
+  margin-bottom: 5px;
+}
+
+.read-more-btn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: black;
+  border: none;
+  padding: 0;
+  padding-left: 2px;
+
+  color: #272727;
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 166.667%;
+}
+
+.read-more-btn:hover {
+  font-weight: 600;
+}
+
+.read-more-btn span {
+  color: #6B7280;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 142.857%;
+}

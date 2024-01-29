@@ -1,0 +1,21 @@
+.start__text-watch {
+  line-height: 158.333%;
+  margin-bottom: 15px;
+}
+
+.watch__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #363636;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 142.857%;
+}
+
+.watch__plus-icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 7px;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/styles/main.css" rel="stylesheet">
+    <link href="/styles/index.css" rel="stylesheet">
+    <script src="./main.js" type="module" defer></script>
+    <title>Movie watchlist</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <h1 class="header__title">
+          Find your film
+        </h1>
+        <a href="./watchlist.html" class="header__link">
+          My Watchlist
+        </a>
+      </div>
+      <div class="search__bar">
+        <label class="search__container" for="search__input">
+          <img 
+            src="./assets/magnifier.svg"
+            alt="magnifier"
+            class="search__icon"
+          >
+          <input
+            type="text"
+            class="search__input"
+            id="search__input"
+            placeholder="Search for a movie"
+            aria-label="search a movie by the title"
+          >
+        </label>
+        <button class="search__btn" id="search__btn" type="button">
+          Search
+        </button>
+      </div>
+    </header>
+    <main class="main" id="main">
+      <img class="start__image" alt="film frame" src="./assets/film-icon.svg">
+      <h3 class="start__text">Start exploring</h3>
+    </main>
+  </body>
+</html>
